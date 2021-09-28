@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>array practice</title>
+</head>
+<body>
+<script>
+    const arr = ['가', '라', '다', '라', '마', '라'];
+    for(i=0; i<3; i++){
+    arr.splice(arr.indexOf('라'),1);
+    }
+    console.log(arr);
+    
+    const arr = ['가', '라', '다', '라', '마', '라'];
+    for(i=arr.indexOf('라'); i<arr.length; i++){
+    arr.splice(arr.indexOf('라'),1);
+    }
+    console.log(arr);
+
+    const arr = ['가', '라', '다', '라', '마', '라'];
+    let arrfinder = arr.indexOf('라');
+    while(arrfinder < arr.length){
+        arr.splice(arr.indexOf('라'),1);
+        arrfinder = arrfinder + 1;
+    }
+    console.log(arr);
+</script>
+</body>
+</html>
